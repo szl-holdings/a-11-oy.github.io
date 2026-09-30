@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="en" data-surface="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SZL Holdings — Proof infrastructure for consequential AI</title>
+  <meta name="description" content="SZL Holdings builds the proof layer beneath consequential AI: sovereign inference, DSSE-signed receipts, and evidence-scoped formal-methods artifacts. Honest by design." />
+  <meta name="theme-color" content="#f5f7fa" /><!-- --bg on the light surface (--color-gray-50); meta content cannot read CSS variables -->
+  <meta name="author" content="SZL Holdings" />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://holdings.a-11-oy.com/" />
+  <link rel="icon" href="/assets/szl/logos/szl_favicon_32.png" sizes="32x32" type="image/png" />
+  <link rel="icon" href="/assets/szl/logos/szl_favicon_square.svg" type="image/svg+xml" />
+  <link rel="apple-touch-icon" href="/assets/szl/logos/szl_favicon_180.png" />
+  <meta property="og:title" content="SZL Holdings — Proof infrastructure for consequential AI" />
+  <meta property="og:description" content="Sovereign inference. DSSE-signed receipts. Machine-checked in Lean 4. receipts.in ≡ receipts.out." />
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="SZL Holdings" />
+  <meta property="og:url" content="https://holdings.a-11-oy.com/" />
+  <meta property="og:image" content="https://holdings.a-11-oy.com/assets/hero.png" />
+  <meta property="og:image:alt" content="SZL Holdings orbit logo: the SZL monogram inside a tilted silver orbit with one coral node, on space navy" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="SZL Holdings — Proof infrastructure for consequential AI" />
+  <meta name="twitter:description" content="Sovereign inference. DSSE-signed receipts. Machine-checked in Lean 4. receipts.in ≡ receipts.out." />
+  <meta name="twitter:image" content="https://holdings.a-11-oy.com/assets/hero.png" />
+  <link rel="stylesheet" href="/assets/szl/szl-design-system.css" />
+  <link rel="stylesheet" href="styles.css?v=5381224c9f8b" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Organization",
+        "@id": "https://holdings.a-11-oy.com/#org",
+        "name": "SZL Holdings",
+        "url": "https://holdings.a-11-oy.com/",
+        "description": "Cryptographic provenance infrastructure for consequential AI decisions — sovereign inference, DSSE-signed receipts, and evidence-scoped formal-methods artifacts.",
+        "founder": { "@type": "Person", "name": "Stephen Lutar" },
+        "sameAs": ["https://github.com/szl-holdings", "https://a-11-oy.com", "https://a11oy.net", "https://huggingface.co/SZLHOLDINGS"]
+      },
+      {
+        "@type": "WebSite",
+        "@id": "https://holdings.a-11-oy.com/#site",
+        "url": "https://holdings.a-11-oy.com/",
+        "name": "SZL Holdings",
+        "publisher": { "@id": "https://holdings.a-11-oy.com/#org" }
+      }
+    ]
+  }
+  </script>
+  <link rel="stylesheet" href="/assets/szl-responsive-apex-v3.css" data-szl-responsive-apex-v3="style" />
+  <!-- SZL-PRODUCT-FRONTDOOR-ASSETS-V2:START -->
+<link rel="stylesheet" href="/assets/szl-spectral-v2.css" data-szl-product-asset="spectral-v2" />
+<script src="/assets/szl-flow-v2.js" defer data-szl-product-asset="flow-v2"></script>
+<!-- SZL-PRODUCT-FRONTDOOR-ASSETS-V2:END -->
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+
+  <header class="nav site-nav" id="nav">
+    <a class="nav__brand" href="#main-content" aria-label="SZL Holdings home">
+      <img src="/assets/szl/logos/szl_logo_horizontal.svg" alt="" width="180" height="68" />
+    </a>
+    <nav class="nav__links nav-links" id="primaryNavigation" aria-label="Primary navigation">
+      <a class="nav__link" href="#thesis">Why SZL</a>
+      <a class="nav__link" href="#front-door">Surfaces</a>
+      <a class="nav__link" href="/products/">Products</a>
+      <a class="nav__link" href="#ecosystem">Portfolio</a>
+      <a class="nav__link" href="#anatomy">Architecture</a>
+      <a class="nav__link" href="#proof">Evidence</a>
+      <a class="btn btn-secondary btn-sm nav-cta" href="https://holdings.a-11-oy.com/docs-site/">Developer docs <span aria-hidden="true">→</span></a>
+    </nav>
+    <button class="nav-toggle" id="navToggle" type="button" aria-label="Open navigation" aria-controls="primaryNavigation" aria-expanded="false">
+      <span aria-hidden="true"></span><span aria-hidden="true"></span><span aria-hidden="true"></span>
+    </button>
+  </header>
+
+  <main id="main-content" tabindex="-1">
+    <!-- HERO -->
+    <section class="hero" id="hero">
+      <div class="hero__orbit" aria-hidden="true"><span class="hero__node"></span></div>
+      <div class="hero-inner">
+        <p class="eyebrow reveal">SZL HOLDINGS · HONEST BY DESIGN</p>
+        <h1 class="hero__title hero-title reveal">
+          Cryptographic provenance infrastructure for consequential AI decisions.
+        </h1>
+        <p class="hero__sub hero-sub reveal">
+          When an AI decision carries real-world weight, a promise isn't enough. SZL Holdings builds
+          the proof layer beneath consequential AI — sovereign inference, DSSE-signed receipts, and
+          evidence-scoped formal-methods artifacts.
+        </p>
+        <p class="hero-eq reveal"><code>receipts.in&nbsp;≡&nbsp;receipts.out</code></p>
+        <div class="hero-cta reveal">
+          <a class="btn btn-secondary btn-lg" href="https://a-11-oy.com" target="_blank" rel="noopener">Explore a11oy →</a>
+          <a class="btn btn-ghost btn-lg" href="https://a11oy.net" target="_blank" rel="noopener">Inspect evidence</a>
+          <a class="btn btn-ghost btn-lg" href="https://holdings.a-11-oy.com/docs-site/">Build with SZL</a>
+        </div>
+        <ul class="hero-stats reveal" aria-label="Operating principles">
+          <li class="metric"><b class="metric__value">Observed</b><span class="metric__label">claims require evidence</span></li>
+          <li class="metric"><b class="metric__value">Fail closed</b><span class="metric__label">missing proof blocks promotion</span></li>
+          <li class="metric"><b class="metric__value">Source-bound</b><span class="metric__label">releases map to Git history</span></li>
+          <li class="metric"><b class="metric__value">Separated</b><span class="metric__label">product · proof · source</span></li>
+        </ul>
+      </div>
+      <a class="scroll-hint" href="#thesis" aria-label="Scroll to thesis">
+        <span></span>
+      </a>
+    </section>
+
+    <!-- FRONT DOOR -->
+    <section class="section front-door" id="front-door" aria-labelledby="front-door-title">
+      <div class="front-door-head reveal">
+        <div>
+          <p class="eyebrow kicker">Choose the right surface</p>
+          <h2 id="front-door-title">Product, evidence, and source stay distinct.</h2>
+        </div>
+        <p class="lede">
+          A public URL proves where a surface is published, not what is operational behind it.
+          Follow the labels at each destination for its current evidence and runtime boundary.
+        </p>
+      </div>
+
+      <div class="surface-grid" aria-label="SZL public surfaces">
+        <a class="surface-card card reveal" href="https://a-11-oy.com" target="_blank" rel="noopener">
+          <span class="badge surface-label">Product</span>
+          <strong>a-11-oy.com</strong>
+          <span>Governed-inference product interface. Inspect each runtime claim at its source.</span>
+          <b aria-hidden="true">Open product &rarr;</b>
+        </a>
+        <a class="surface-card card reveal" href="https://a11oy.net" target="_blank" rel="noopener">
+          <span class="badge surface-label">Evidence</span>
+          <strong>a11oy.net</strong>
+          <span>Independent index for receipts, assurance material, and public evidence artifacts.</span>
+          <b aria-hidden="true">Inspect evidence &rarr;</b>
+        </a>
+        <a class="surface-card card reveal" href="https://github.com/szl-holdings" target="_blank" rel="noopener">
+          <span class="badge surface-label">Source</span>
+          <strong>GitHub</strong>
+          <span>Versioned source, reviews, release history, and CI records across the organization.</span>
+          <b aria-hidden="true">Browse source &rarr;</b>
+        </a>
+        <a class="surface-card card reveal" href="https://huggingface.co/SZLHOLDINGS" target="_blank" rel="noopener">
+          <span class="badge surface-label">Public registry</span>
+          <strong>Hugging Face</strong>
+          <span>Models, datasets, collections, and Spaces. A listing does not establish capability.</span>
+          <b aria-hidden="true">Open registry &rarr;</b>
+        </a>
+        <a class="surface-card card reveal" href="https://a11oy-verify.pplx.app" target="_blank" rel="noopener">
+          <span class="badge surface-label">Verifier</span>
+          <strong>a11oy / verify</strong>
+          <span>Offline in-browser verification of GovernedAction/v1 receipts. Tamper a byte, watch it fail. No server decides anything.</span>
+          <b aria-hidden="true">Run verification &rarr;</b>
+        </a>
+        <a class="surface-card card reveal" href="https://github.com/szl-holdings/governance-as-code" target="_blank" rel="noopener">
+          <span class="badge surface-label">Open format</span>
+          <strong>GovernedAction/v1</strong>
+          <span>The open receipt spec, receipt library, adversarial test suite (64 PoCs held), and Article 12 conformance profile.</span>
+          <b aria-hidden="true">Read the spec &rarr;</b>
+        </a>
+        <a class="surface-card card reveal" href="https://huggingface.co/spaces/SZLHOLDINGS/governed-receipt-verifier" target="_blank" rel="noopener">
+          <span class="badge surface-label">Evidence surface</span>
+          <strong>Receipt Verifier Space</strong>
+          <span>The same offline verifier served from the Hub, registry-bound to the published keys.</span>
+          <b aria-hidden="true">Verify on HF &rarr;</b>
+        </a>
+        <a class="surface-card card reveal" href="https://szlholdings-killinchu.hf.space/elite" target="_blank" rel="noopener">
+          <span class="badge surface-label">Defense surface</span>
+          <strong>Killinchu</strong>
+          <span>Public counter-UAS interface with feed and effector states labeled at their named source; human authority remains explicit.</span>
+          <b aria-hidden="true">Open Killinchu &rarr;</b>
+        </a>
+        <a class="surface-card card reveal" href="https://holdings.a-11-oy.com/khipu/">
+          <span class="badge surface-label">KHIPU hologram</span>
+          <strong>holdings.a-11-oy.com/khipu</strong>
+          <span>JS silhouette of SZL KHIPU. Duals Ari=GreenLight and Kay Pacha=Anatomy. Original cuts only. Kernel is not run here. CUDA UNAVAILABLE. Conjecture 1 OPEN.</span>
+          <b aria-hidden="true">Open hologram &rarr;</b>
+        </a>
+        <a class="surface-card card reveal" href="https://holdings.a-11-oy.com/docs-site/">
+          <span class="badge surface-label">Developer docs</span>
+          <strong>Build with SZL</strong>
+          <span>Architecture, API, integration, and operator references for developers.</span>
+          <b aria-hidden="true">Read the docs &rarr;</b>
+        </a>
+      </div>
+
+      <div class="status-key card reveal" aria-labelledby="status-key-title">
+        <div class="status-key-intro">
+          <p class="eyebrow kicker">Evidence vocabulary</p>
+          <h3 id="status-key-title">Read the label before the claim.</h3>
+        </div>
+        <dl>
+          <div><dt><span class="chip chip-live">MEASURED</span></dt><dd>Captured from named instrumentation.</dd></div>
+          <div><dt><span class="chip">REPORTED</span></dt><dd>Supplied by a source, not independently measured here.</dd></div>
+          <div><dt><span class="chip chip-simulated">MODELED</span></dt><dd>Produced by a model or scenario, not observed deployment behavior.</dd></div>
+          <div><dt><span class="chip chip-unavailable">UNAVAILABLE</span></dt><dd>Required evidence is absent and represented as such.</dd></div>
+          <div><dt><span class="chip chip-sample">UNSIGNED</span></dt><dd>Content exists without an approved signature; it is not verified.</dd></div>
+          <div><dt><span class="chip chip-conjecture">CONJECTURE</span></dt><dd>Stated for investigation, not presented as a closed theorem.</dd></div>
+        </dl>
+      </div>
+    </section>
+
+    <!-- CANONICAL PRODUCT PORTFOLIO -->
+    <section class="section" id="products" aria-labelledby="products-title">
+      <div class="section-head reveal">
+        <p class="eyebrow kicker">One front door</p>
+        <h2 id="products-title">Every SZL product. One portfolio.</h2>
+        <p class="lede">holdings.a-11-oy.com is the company and portfolio catalog. The live A11oy product remains at a-11-oy.com; Hugging Face entries remain separately labeled publication surfaces.</p>
+      </div>
+      <div class="surface-grid" aria-label="Product portfolio entry points">
+        <a class="surface-card card reveal" href="/products/"><span class="badge surface-label">Canonical catalog</span><strong>Explore all products</strong><span>Verticals, platform products, source ownership, migration state, and the machine-readable catalog.</span><b aria-hidden="true">Open portfolio &rarr;</b></a>
+        <a class="surface-card card reveal" href="https://huggingface.co/SZLHOLDINGS" target="_blank" rel="noopener"><span class="badge surface-label">Published registry</span><strong>Hugging Face</strong><span>Models, datasets, collections, and Spaces retain their own evidence and runtime labels.</span><b aria-hidden="true">Open registry &rarr;</b></a>
+      </div>
+    </section>
+
+    <!-- THESIS -->
+    <section class="section" id="thesis">
+      <div class="section-head reveal">
+        <p class="eyebrow kicker">The thesis</p>
+        <h2>Proof, not promises.</h2>
+        <p class="lede">
+          Most AI systems ask you to trust them. SZL surfaces are designed to expose what was
+          observed, what was signed, and what remains unavailable. A receipt is evidence only when
+          its bytes, key, and source binding verify.
+        </p>
+      </div>
+      <div class="pillars">
+        <article class="pillar card reveal">
+          <span class="pillar-no">01</span>
+          <h3>Sovereign inference</h3>
+          <p>
+            Supports owner-controlled inference paths. Each product surface reports the runtime it
+            actually used; this front door does not infer sovereignty from a URL.
+          </p>
+        </article>
+        <article class="pillar card reveal">
+          <span class="pillar-no">02</span>
+          <h3>Signed receipts</h3>
+          <p>
+            Receipt-aware components can emit DSSE / ECDSA&nbsp;P-256 evidence. Missing keys or
+            unverifiable signatures remain <span class="hl">UNSIGNED</span> or
+            <span class="hl">UNAVAILABLE</span>; they never become verified by presentation.
+          </p>
+        </article>
+        <article class="pillar card reveal">
+          <span class="pillar-no">03</span>
+          <h3>Machine-checked truth</h3>
+          <p>
+            The governance aggregator Λ is formalized in Lean&nbsp;4 + Mathlib. We state Λ-uniqueness
+            as <span class="hl">Conjecture&nbsp;1</span> — not a closed theorem. Honest about what's
+            proven and what isn't.
+          </p>
+        </article>
+        <article class="pillar card reveal">
+          <span class="pillar-no">04</span>
+          <h3>Multi-party witnessed</h3>
+          <p>
+            Khipu contracts model 3-of-4 witnessed agreement with independently signed action
+            hashes. Runtime use and quorum completion must be proved by the consuming surface.
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <!-- ECOSYSTEM -->
+    <section class="section section-alt" id="ecosystem">
+      <div class="section-head reveal">
+        <p class="eyebrow kicker">The ecosystem</p>
+        <h2>One doctrine. Many organs.</h2>
+        <p class="lede">
+          A family of systems across <span class="hl">szl-holdings</span>, grouped by the job each
+          does. Shared contracts do not erase distinct trust roots, deployment states, or evidence
+          boundaries. A public link does not by itself establish runtime readiness.
+        </p>
+      </div>
+      <div class="eco" id="ecosystemGroups"><!-- groups injected by app.js --></div>
+      <p class="eco-foot reveal">Full source, repo by repo, at <a href="https://github.com/szl-holdings" target="_blank" rel="noopener">github.com/szl-holdings</a>.</p>
+    </section>
+
+    <!-- ANATOMY -->
+    <section class="section" id="anatomy">
+      <div class="section-head reveal">
+        <p class="eyebrow kicker">The anatomy</p>
+        <h2>Five organs, one nervous system.</h2>
+        <p class="lede">
+          The five-organ model is an architecture map: reasoning, policy, receipts, witnesses, and
+          egress. A deployed surface may implement only part of it; its own evidence must show which
+          stages ran and whether a signature verified.
+        </p>
+      </div>
+      <div class="holo is-dark reveal" aria-hidden="true">
+        <canvas id="holoCanvas"></canvas>
+        <span class="holo-cap">architecture projection · five governed stages</span>
+      </div>
+      <ol class="organs" aria-label="The five organs of governed agent change management">
+        <li class="organ card reveal" data-d="1">
+          <span class="organ-no">01</span>
+          <h3>Reasoning cortex</h3>
+          <p><code>szl-router</code> can expose model and provider provenance; each response must carry its own measured runtime state.</p>
+        </li>
+        <li class="organ card reveal" data-d="2">
+          <span class="organ-no">02</span>
+          <h3>Trust gate</h3>
+          <p>The Λ aggregator scores each action and an <em>advisory</em> policy gate admits or holds it. Λ-uniqueness is Conjecture 1 — not proven trust.</p>
+        </li>
+        <li class="organ card reveal" data-d="3">
+          <span class="organ-no">03</span>
+          <h3>Receipt bus</h3>
+          <p>The <code>szl-receipt</code> DSSE / ECDSA-P256 primitive, hash-chained. UNSIGNED-honest when no key is present.</p>
+        </li>
+        <li class="organ card reveal" data-d="4">
+          <span class="organ-no">04</span>
+          <h3>Consensus</h3>
+          <p><code>khipu-consensus</code> defines a 3-of-4 witness contract. A quorum is claimed only when its signed witness set is present.</p>
+        </li>
+        <li class="organ card reveal" data-d="4">
+          <span class="organ-no">05</span>
+          <h3>Egress</h3>
+          <p><code>vsp-otel</code> defines auditable egress records; signed status depends on the emitted record and configured trust root.</p>
+        </li>
+      </ol>
+      <a class="btn btn-secondary btn-lg anatomy-cta reveal" href="https://github.com/szl-holdings/anatomy" target="_blank" rel="noopener">Open the living anatomy →</a>
+    </section>
+
+    <!-- STANDARDS / FRONTIER -->
+    <section class="section section-alt" id="standards">
+      <div class="section-head reveal">
+        <p class="eyebrow kicker">The frontier</p>
+        <h2>Open standards, not a walled garden.</h2>
+        <p class="lede">
+          SZL uses open attestation formats where each component's contract says so. Verification
+          depends on the exact envelope, algorithm, and public key—not on a brand label or file name.
+        </p>
+      </div>
+      <div class="stack reveal" aria-label="Where SZL sits in the attestation stack">
+        <div class="stack-layer"><span class="stack-k">SLSA</span><span class="stack-v">Provenance policy — <b>what</b> guarantees must hold.</span></div>
+        <div class="stack-layer"><span class="stack-k">in-toto</span><span class="stack-v">Statement format used by applicable provenance records.</span></div>
+        <div class="stack-layer"><span class="stack-k">sigstore · cosign · DSSE</span><span class="stack-v">Compatible verification families; each artifact declares its exact contract.</span></div>
+        <div class="stack-layer own"><span class="stack-k">szl-receipt</span><span class="stack-v">Shared receipt library with explicit VERIFIED, UNSIGNED, and UNAVAILABLE states.</span></div>
+      </div>
+      <div class="frontier">
+        <article class="frontier-card card reveal" data-d="1">
+          <span class="badge frontier-tag">Policy reference</span>
+          <h3>Evidence-ready AI governance</h3>
+          <p>EU AI Act implementation is staged. Applicable duties and dates depend on the system and classification; the official Commission framework is the source of truth.</p>
+          <a class="frontier-link" href="https://digital-strategy.ec.europa.eu/en/policies/regulatory-framework-ai" target="_blank" rel="noopener">EU AI Act →</a>
+        </article>
+        <article class="frontier-card card reveal" data-d="2">
+          <span class="badge frontier-tag">Formal methods</span>
+          <h3>Machine-checked goes mainstream</h3>
+          <p>Proof assistants are moving from niche to expected. Λ is formalized in Lean 4 — and we label its uniqueness <em>Conjecture 1</em>, not a theorem.</p>
+          <a class="frontier-link" href="https://doi.org/10.5281/zenodo.20434308" target="_blank" rel="noopener">Read the formalization →</a>
+        </article>
+        <article class="frontier-card card reveal" data-d="3">
+          <span class="badge frontier-tag">Roadmap</span>
+          <h3>Confidential compute</h3>
+          <p>TEE-attested inference (H100/H200, TDX) is becoming the enterprise default. Sovereign-first today; hardware-attested inference is on the roadmap — stated honestly, not shipped-as-claimed.</p>
+          <a class="frontier-link" href="#concierge">Ask the brain →</a>
+        </article>
+      </div>
+    </section>
+
+    <!-- PROOF -->
+    <section class="section" id="proof">
+      <div class="proof-wrap">
+        <div class="section-head proof-head reveal">
+          <p class="eyebrow kicker">Verify, don't trust</p>
+          <h2>Verify the receipt that actually arrived.</h2>
+          <p class="lede">
+            This panel requests a live envelope and verifies it in the browser. If the service or
+            public key is unavailable, it shows an explicitly illustrative sample instead of a
+            success state.
+          </p>
+          <ul class="proof-facts">
+            <li>Source-linked Lean 4 + Mathlib formalization</li>
+            <li>Λ uniqueness remains explicitly labeled <em>Conjecture 1</em></li>
+            <li>DOI <a href="https://doi.org/10.5281/zenodo.20434308" target="_blank" rel="noopener">10.5281/zenodo.20434308</a></li>
+            <li>SLSA L1 honest · L2 roadmap</li>
+          </ul>
+        </div>
+        <figure class="receipt-panel is-dark reveal" aria-label="Receipt verification status">
+          <figcaption class="receipt-panel__bar">
+            <span class="receipt-title">szl-receipt · DSSE envelope</span>
+            <span class="receipt" data-state="unverified"><span class="receipt__dot" aria-hidden="true"></span><span class="receipt__label receipt-badge muted" id="verifyBadge">CHECKING</span></span>
+          </figcaption>
+          <pre class="code receipt-body" id="receiptBody"></pre>
+        </figure>
+      </div>
+      <div class="verify-strip card reveal">
+        <span class="verify-lead">Inspect the verification path:</span>
+        <a class="verify-link" href="https://github.com/szl-holdings/szl-holdings.github.io/blob/main/app.js" target="_blank" rel="noopener">browser verifier source</a>
+        <a class="verify-link" href="https://github.com/szl-holdings/szl-receipt" target="_blank" rel="noopener">szl-receipt source</a>
+      </div>
+    </section>
+
+    <!-- CONCIERGE -->
+    <section class="section section-alt" id="concierge">
+      <div class="section-head reveal">
+        <p class="eyebrow kicker">Use the brain</p>
+        <h2>Ask the sovereign concierge.</h2>
+        <p class="lede">
+          When an operator configures the governed <code>szl-router</code> endpoint, returned
+          provenance is displayed. The committed default is disabled and fail-closed; the interface
+          labels its bounded local answer as an offline sample.
+        </p>
+      </div>
+      <div class="concierge card reveal">
+        <div class="chat" id="chat" aria-live="polite"></div>
+        <div class="chat-suggest" id="chatSuggest" aria-label="Suggested questions">
+          <button type="button" class="suggest btn btn-secondary btn-sm" data-q="What does a szl-receipt guarantee?">What does a szl-receipt guarantee?</button>
+          <button type="button" class="suggest btn btn-secondary btn-sm" data-q="What is killinchu?">What is killinchu?</button>
+          <button type="button" class="suggest btn btn-secondary btn-sm" data-q="How does khipu-consensus work?">How does khipu-consensus work?</button>
+          <button type="button" class="suggest btn btn-secondary btn-sm" data-q="Is Λ-uniqueness proven?">Is Λ-uniqueness proven?</button>
+          <button type="button" class="suggest btn btn-secondary btn-sm" data-q="What runs the sovereign inference?">What runs the sovereign inference?</button>
+        </div>
+        <form class="chat-form" id="chatForm" autocomplete="off">
+          <input id="chatInput" class="text-input" type="text" placeholder="Ask about SZL Holdings, receipts, or the doctrine…" aria-label="Message the sovereign concierge" />
+          <button class="btn btn-secondary btn-lg" type="submit" id="chatSend">Send</button>
+        </form>
+        <p class="chat-note" id="chatNote">Sovereign-first · honest provenance · no data leaves the substrate unless you arm a fallback.</p>
+      </div>
+    </section>
+
+    <!-- FOUNDER -->
+    <section class="section" id="founder">
+      <div class="founder">
+        <div class="founder-card card reveal">
+          <div class="badge founder-badge">Founder &amp; CEO</div>
+          <h2>Stephen Lutar</h2>
+          <p>
+            Stephen founded SZL Holdings to build what consequential AI actually needs: not louder
+            claims, but verifiable proof. The result is a substrate where decision evidence is
+            surfaced explicitly and the hardest guarantees are checked by machines — not marketing.
+          </p>
+          <p class="founder-quote">
+            &ldquo;If a decision matters, it should leave a receipt. If a guarantee matters, it
+            should be a theorem — or honestly labeled a conjecture.&rdquo;
+          </p>
+          <div class="founder-links">
+            <a class="btn btn-secondary btn-lg" href="https://a-11-oy.com" target="_blank" rel="noopener">a-11-oy.com</a>
+            <a class="btn btn-secondary btn-lg" href="https://github.com/szl-holdings" target="_blank" rel="noopener">GitHub · szl-holdings</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <img src="/assets/szl/logos/szl_logo_horizontal.svg" alt="SZL Holdings" width="180" height="68" />
+      </div>
+      <p class="footer-tag">Cryptographic provenance infrastructure for consequential AI decisions. Honest by design.</p>
+      <nav class="footer-links" aria-label="Footer">
+        <a href="https://a-11-oy.com" target="_blank" rel="noopener">Product</a>
+        <a href="https://a11oy.net" target="_blank" rel="noopener">Evidence</a>
+        <a href="https://github.com/szl-holdings" target="_blank" rel="noopener">Source</a>
+        <a href="https://huggingface.co/SZLHOLDINGS" target="_blank" rel="noopener">Hugging Face</a>
+        <a href="https://szlholdings-killinchu.hf.space/elite" target="_blank" rel="noopener">Killinchu</a>
+        <a href="https://holdings.a-11-oy.com/docs-site/">Developer docs</a>
+      </nav>
+      <p class="footer-fine">© <span id="year"></span> SZL Holdings · Verify evidence at its named source.</p>
+    </div>
+  </footer>
+
+  <script src="app.js?v=8330d2d19af5"></script>
+  <script src="/assets/szl-responsive-apex-v3.js" defer data-szl-responsive-apex-v3="script"></script>
+</body>
+</html>
